@@ -28,7 +28,7 @@ The workflow proceeds through the following major stages:
 2. **Tree Inference (IQ-TREE)**
 3. **Clade File Construction**
 4. **Topology Filtering and Support Estimation (SeaLion)**
-5. **Tree Re-rooting and Canonicalization (ESOFT + reroot)**
+5. **Tree Re-rooting (ESOFT + reroot)**
 6. **Quartet Distance Evaluation**
 7. **Statistical Summaries and Visualization**
 
