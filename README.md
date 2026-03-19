@@ -70,7 +70,7 @@ All Python dependencies are compatible with Conda-based environments commonly us
 The script expects the **working directory** as its first positional argument:
 
 ```bash
-python3 pipeline.py <working_directory>
+python3 /home/s36jshem_hpc/sealion/sealion_files/sea_lion/SIQ_MARVIN.py $working_directory$
 ```
 
 ### User-Defined Paths
