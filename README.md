@@ -4,6 +4,12 @@
 
 This repository contains a comprehensive, end-to-end computational pipeline developed for a Master's thesis in Organismic Biology. The pipeline is designed to **simulate sequence alignments under controlled GC-content heterogeneity**, infer phylogenetic trees using **IQ-TREE**, evaluate competing topologies using **SeaLion**, and quantitatively compare inferred trees against a known ground-truth topology using **quartet distance metrics**. The workflow is optimized for execution on an **HPC environment** and emphasizes reproducibility, scalability, and structured output suitable for downstream statistical and graphical analyses.
 
+For usability the relevant files are the user_file_ALI and SIQ_MARVIN, which uses ALISIM to simulate DNA sequences, pass them through IQTREE, SeaLion, then produce a suite of graphics. When conducting LBA tests users need to run user_file_LBA and SIQ_LBA.
+
+At its current stage this pipeline is hardcoded to pathways as an example for future users. They need to be customized according to your HPC or local computer. SeaLion, IQTREE, and reroot all need to be downloaded for this pipeline to work, the location is up to you, the path is then adjusted according to your downloaded location. 
+
+Within the user files there are notes explaining what the variables mean, how to use it, and they are provided with examples that can assist the user. 
+
 The pipeline integrates simulation, inference, topology filtering, and visualization into a single orchestrated script while maintaining modularity through well-defined functional stages.
 
 ---
@@ -33,6 +39,7 @@ The workflow proceeds through the following major stages:
 7. **Statistical Summaries and Visualization**
 
 Each stage writes structured intermediate outputs to disk, enabling checkpointing and independent re-analysis.
+
 
 ---
 
